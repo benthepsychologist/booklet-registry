@@ -1,0 +1,42 @@
+# A module is text, not code: what there is to check is that it is valid,
+# honest about itself, licensed, and that registry.json is current. The checks
+# use the engine's linter and parser, so CI checks out the engine beside this repo.
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { path: booklet-registry, fetch-depth: 0 }
+      - uses: actions/checkout@v4
+        with: { repository: benthepsychologist/booklet, path: booklet }
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Every module declares a licence
+        working-directory: booklet-registry
+        run: node check-licenses.js
+      - name: Every module lints clean as registry content
+        working-directory: booklet-registry
+        run: python3 ../booklet/lint-booklet.py --registry modules/*.md
+      - name: registry.json and index.html are current
+        working-directory: booklet-registry
+        run: node build-registry.js --check
+      - name: Every entry points at a file that exists
+        working-directory: booklet-registry
+        run: |
+          node -e '
+            const fs=require("fs");
+            const reg=JSON.parse(fs.readFileSync("registry.json","utf8"));
+            let bad=0;
+            for (const m of reg.modules) {
+              if (m.module) continue;
+              if (!m.file || !fs.existsSync(m.file)) { console.log("⛔ "+m.id+" -> "+m.file); bad++; }
+            }
+            console.log(reg.modules.length+" entries checked, "+bad+" broken");
+            process.exit(bad?1:0);'
