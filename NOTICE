@@ -1,0 +1,11 @@
+Booklet Registry
+Copyright 2026 Ben Armstrong
+
+This product includes software developed by Ben Armstrong.
+
+The registry tooling and registry.json are licensed under the Apache License,
+Version 2.0. See LICENSE for the full terms.
+
+Each module in this registry declares its own copyright and license in its
+front matter. Those terms travel with the module, and are not the Apache
+License unless the module says so.
