@@ -53,7 +53,7 @@ Feelings can be placed along two dimensions.
 Crossing the two gives four neighbourhoods. The words on the map are the ones the check-in uses; each neighbourhood holds more than the words shown.
 
 > [!widget|s2grid readonly describe] Four quadrants of feeling
-> ![[#^quadrants]]
+> ![[#^guide-quadrants]]
 
 A single moment usually sits in more than one neighbourhood. That is why the check-in lets you select several.
 
@@ -139,6 +139,6 @@ And it puts you in a different seat. Several systems are usually active at once,
   "copy": { "h": "Feelings", "p": "Select whatever fits. More than one is normal." }
 }
 ```
-^quadrants
+^guide-quadrants
 
 > [!module|mensio-the-guide end] End of A short guide to the four quadrants
