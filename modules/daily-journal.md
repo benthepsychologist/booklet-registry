@@ -32,7 +32,7 @@ Write as little as you like. An entry with one line in it is still an entry, and
 > [!lines|lines] Worth keeping
 > One line each, no explanation. A phrase is enough.
 
-> [!text|mind] What is still on your mind?
+> [!text|still-on-mind] What is still on your mind?
 > The thing you would still be thinking about at midnight.
 
 > [!text|tomorrow] Anything for tomorrow?
