@@ -20,7 +20,7 @@ Each entry's `file` is relative to it, so a module is at `modules/<name>.md`.
 
 ## Adding a module
 
-1. Put the file in `modules/`, one v0.7 module per file, with `license:` (and
+1. Put the file in `modules/`, one v0.8 module per file, with `license:` (and
    `copyright:` where it is not yours to give away) in its front matter.
 2. `node build-registry.js` to regenerate `registry.json` and `index.html`.
 3. Open a pull request. CI runs the engine's linter, the licence check, and

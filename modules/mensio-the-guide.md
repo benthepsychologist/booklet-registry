@@ -1,5 +1,5 @@
 ---
-booklet: 0.7
+booklet: 0.8
 id: mensio/the-guide
 title: A short guide to the four quadrants
 lang: en
@@ -117,7 +117,7 @@ And it puts you in a different seat. Several systems are usually active at once,
 > Your emotional systems are not problems to solve but team members to understand and coordinate. The goal is not perfect balance. It is a working relationship with all the parts of yourself — one in which growth, repair, and real choice become possible.
 
 ```booklet widget
-{ "engine": "grid-select", "title": "Four quadrants of feeling",
+{ "engine": "grid-select",
   "axes": { "top": "more activated", "bottom": "less activated", "left": "more unpleasant", "right": "more pleasant" },
   "cells": [
     { "id": "agitating", "label": "Agitating", "note": "Activated and unpleasant. Anger, frustration, anxiety, fear. These feelings push for a response — fight, fix, escape, prepare. Uncomfortable, and often useful.",
