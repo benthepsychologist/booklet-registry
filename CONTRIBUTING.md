@@ -2,7 +2,7 @@
 
 These are the contribution rules for the Booklet module registry (this repo). The engine, format spec and linter are in [`booklet`](https://github.com/benthepsychologist/booklet).
 
-A module is one v0.8 booklet file: front matter, prose explaining what it
+A module is one v0.9 booklet file: front matter, prose explaining what it
 is, and one `> [!module|…]` … `> [!module|… end]` fence holding its
 activities as callout lines, with a widget's own data (if it has one) fenced
 alongside as JSON. There is **no code in it** — which is why adding one is a
@@ -29,7 +29,7 @@ publish. It is only a gate on what *this* list offers.
 
 ````markdown
 ---
-booklet: 0.8
+booklet: 0.9
 id: "you/your-thing"
 title: "Your thing"
 lang: en
@@ -93,7 +93,7 @@ If your module is yours and you want to keep it that way, say so in its own
 
 ```yaml
 ---
-booklet: 0.8
+booklet: 0.9
 id: "you/your-thing"
 title: "Your thing"
 lang: en
