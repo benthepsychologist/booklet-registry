@@ -67,7 +67,7 @@ run them yourself first either way:
 | --- | --- |
 | every module fence you open is closed, once, by the same id | `lint-booklet.py` |
 | a `> [!widget|…]` line **carries its own data**, embedded right there | the most common mistake |
-| ids are unique, and stable — an id is an address | |
+| ids are unique within the module, and stable — an id is an address | `lint-booklet.py` |
 | the file declares one `lang:` | one module, one language, always |
 | the file declares a `license:` | `node check-licenses.js` |
 | `registry.json` matches the modules in the repo | `node build-registry.js` |
@@ -104,9 +104,12 @@ source: "https://example.org/where-it-lives"
 ---
 ```
 
-**In the front matter, because the file itself is the unit that
-travels** — there is no paste-and-lose-it path, so the front matter is where
-these belong (`SPEC.md` §2).
+**Front matter is enough.** A module file holds one module, so its front
+matter is that module's notice. When a reader adds the module to a booklet,
+the renderer writes these lines into the module itself, as a `> [!notice]` box
+at the top of its fence, so they are still there in the file the reader
+downloads (`SPEC.md` §3). You may write that box yourself instead; if a file
+has both, the box wins.
 
 **A `license` is required.** There is no default: a module that declares none fails CI and is not offered. If you want it open, say so (`license: Apache-2.0`, `CC-BY-4.0`, `CC0-1.0`).
 
