@@ -13,10 +13,8 @@ The plainest possible activity: a question, some lines, and a few prompts you
 can ignore. Each day you finish becomes a kept entry with a date, and the
 history is the back button on all of them.
 
-## Adding it to a booklet
-
-Open this file on its own, or copy everything below the front matter into
-your own booklet, above the long rule.
+<!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
+your own booklet, above the long rule. -->
 
 > [!module|example-daily-journal] Daily journal
 
