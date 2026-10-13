@@ -18,16 +18,14 @@ you notice. A reading activity: it asks nothing and keeps nothing.
 read-only, so the words on the map here and the words you tap there are the
 same words and cannot drift apart.
 
-⚠️ **This page carries ES2 claim `A-01`** (depression as the persistent
+<!-- ⚠️ **This page carries ES2 claim `A-01`** (depression as the persistent
 absence of invigorating emotion). Its presentation boundary is in
 `research/es2-additions-2026-09.yaml`: it may be offered as a way of noticing
 what has gone quiet, never as a definition, a diagnostic criterion, or a basis
-for self-diagnosis. Editing that section is a clinical change, not a copy edit.
+for self-diagnosis. Editing that section is a clinical change, not a copy edit. -->
 
-## Adding it to a booklet
-
-Open this file on its own, or copy everything below the front matter into
-your own booklet, above the long rule.
+<!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
+your own booklet, above the long rule. -->
 
 > [!module|mensio-the-guide] A short guide to the four quadrants
 

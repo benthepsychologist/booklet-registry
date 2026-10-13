@@ -16,13 +16,11 @@ nothing wedged between them. The body map is two figures, front and back;
 feelings come from the four energy/valence quadrants; thoughts are bare
 headlines with no explanation attached.
 
-## Adding it to a booklet
-
-Open this file on its own, or copy everything below the front matter into
+<!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
 your own booklet, above the long rule. If your booklet already has a module
 with this id, this one replaces it in place, which is how you take an update.
 **Your entries stay either way** — they live in their own records, keyed by
-the activity, so putting the module back brings them back with it.
+the activity, so putting the module back brings them back with it. -->
 
 > [!module|mensio-check-in] A mindful check-in
 

@@ -13,10 +13,8 @@ license: Apache-2.0
 A **guide**: a page that only reads. It asks nothing and keeps nothing. Add it
 to a booklet and the booklet explains itself.
 
-## Adding it to a booklet
-
-Open this file on its own, or copy everything below the front matter into
-your own booklet, above the long rule.
+<!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
+your own booklet, above the long rule. -->
 
 > [!module|example-what-is-a-booklet] What is a booklet
 

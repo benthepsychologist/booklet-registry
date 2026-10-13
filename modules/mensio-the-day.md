@@ -15,19 +15,17 @@ The Core Responsibilities protocol: *what needs to happen for me to feel good
 about today?* Ends with what was actually there: no score, no streak, no
 percentage.
 
-⚠️ **Not a full conversion.** Version 1 of this module offered three tick
+<!-- ⚠️ **Not a full conversion.** Version 1 of this module offered three tick
 lists (`needs`, `enjoy`, `soothe`) drawn live from a separate "Map" module's
 own fields, and a `didlog` that ticked off which of those picks actually
 happened. Version 2 has no question kind yet for "options pulled from
 another activity's list" or "tick what you picked earlier" — see `SPEC.md`
 §13. Until one exists, this file keeps only the free-text question and the
 plain follow-up questions; the map-linked lists and the tick-off are dropped
-rather than faked.
+rather than faked. -->
 
-## Adding it to a booklet
-
-Open this file on its own, or copy everything below the front matter into
-your own booklet, above the long rule.
+<!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
+your own booklet, above the long rule. -->
 
 > [!module|mensio-the-day] Have a good day
 
