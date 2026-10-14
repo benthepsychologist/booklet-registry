@@ -1,5 +1,5 @@
 ---
-booklet: "0.12"
+booklet: "0.13"
 id: example/what-is-a-booklet
 title: What is a booklet
 lang: en

@@ -1,5 +1,5 @@
 ---
-booklet: "0.12"
+booklet: "0.13"
 id: mensio/the-guide
 title: A short guide to the four quadrants
 lang: en
