@@ -1,5 +1,5 @@
 ---
-booklet: "0.13"
+booklet: "0.15"
 id: mensio/the-day
 title: Have a good day
 lang: en
@@ -35,22 +35,28 @@ What needs to happen today.
 
 Not the to-do list, and not a target. The question is what has to be there for you to get to the end of today and feel you carried your weight — which is usually shorter and more specific than everything you could do.
 
-> [!text|extra long] Anything else that would make today satisfying
-> In your own words.
+> [!group]
+> > [!text|extra long] Anything else that would make today satisfying
+> > In your own words.
 
-> [!text|mind] On my mind today
-> What keeps coming back, in a sentence or two.
+> [!group]
+> > [!text|mind] On my mind today
+> > What keeps coming back, in a sentence or two.
 
-> [!text|exploring] What I'm exploring or trying
-> Something in motion, however small.
+> [!group]
+> > [!text|exploring] What I'm exploring or trying
+> > Something in motion, however small.
 
-> [!text|aside] What I'm setting aside for today
-> A worry or task that can wait. Naming it here is not the same as dismissing it.
+> [!group]
+> > [!text|aside] What I'm setting aside for today
+> > A worry or task that can wait. Naming it here is not the same as dismissing it.
 
-> [!text|help] What would help today
-> A person, a condition, a resource, a smaller scope.
+> [!group]
+> > [!text|help] What would help today
+> > A person, a condition, a resource, a smaller scope.
 
-> [!text|carry] One thing to carry forward
-> From yesterday, or from the last entry.
+> [!group]
+> > [!text|carry] One thing to carry forward
+> > From yesterday, or from the last entry.
 
 > [!module|mensio-the-day end] End of Have a good day

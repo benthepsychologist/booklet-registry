@@ -1,5 +1,5 @@
 ---
-booklet: "0.13"
+booklet: "0.15"
 id: mensio/check-in
 title: A mindful check-in
 lang: en
@@ -30,8 +30,9 @@ Body, feelings, thoughts — noticed, named, kept.
 
 Notice, name, keep. Nothing here needs to be explained or fixed.
 
-> [!widget|body] Body
-> ![[#^body-map]]
+> [!group]
+> > [!widget|body] Body
+> > ![[#^body-map]]
 
 ```booklet widget
 { "engine": "svg-regions",
@@ -71,8 +72,9 @@ Notice, name, keep. Nothing here needs to be explained or fixed.
 ```
 ^body-map
 
-> [!widget|emotions] Feelings
-> ![[#^quadrants]]
+> [!group]
+> > [!widget|emotions] Feelings
+> > ![[#^quadrants]]
 
 ```booklet widget
 { "engine": "grid-select",
@@ -99,10 +101,12 @@ Notice, name, keep. Nothing here needs to be explained or fixed.
 ```
 ^quadrants
 
-> [!text|other] Something else
-> In your own words.
+> [!group]
+> > [!text|other] Something else
+> > In your own words.
 
-> [!lines|thoughts] Mind is thinking about
-> Notice, name, keep.
+> [!group]
+> > [!lines|thoughts] Mind is thinking about
+> > Notice, name, keep.
 
 > [!module|mensio-check-in end] End of A mindful check-in

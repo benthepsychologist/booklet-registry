@@ -1,5 +1,5 @@
 ---
-booklet: "0.13"
+booklet: "0.15"
 id: example/daily-journal
 title: Daily journal
 lang: en
@@ -24,16 +24,20 @@ A few minutes at the end of a day. Nothing has to be interesting.
 
 Write as little as you like. An entry with one line in it is still an entry, and a run of short ones tells you more than a single long one.
 
-> [!text|day] What happened today?
-> As much or as little as you want. Nobody reads this.
+> [!group]
+> > [!text|day] What happened today?
+> > As much or as little as you want. Nobody reads this.
 
-> [!lines|lines] Worth keeping
-> One line each, no explanation. A phrase is enough.
+> [!group]
+> > [!lines|lines] Worth keeping
+> > One line each, no explanation. A phrase is enough.
 
-> [!text|still-on-mind] What is still on your mind?
-> The thing you would still be thinking about at midnight.
+> [!group]
+> > [!text|still-on-mind] What is still on your mind?
+> > The thing you would still be thinking about at midnight.
 
-> [!text|tomorrow] Anything for tomorrow?
-> Only if there is something. Leave it blank otherwise.
+> [!group]
+> > [!text|tomorrow] Anything for tomorrow?
+> > Only if there is something. Leave it blank otherwise.
 
 > [!module|example-daily-journal end] End of Daily journal
