@@ -1,5 +1,5 @@
 ---
-booklet: "0.15"
+booklet: "0.16"
 id: mensio/check-in
 title: A mindful check-in
 lang: en
@@ -85,9 +85,9 @@ Notice, name, keep. Nothing here needs to be explained or fixed.
     { "id": "energizing", "label": "Invigorating", "note": "Activated and pleasant. Motivation, drive, curiosity, joy, enthusiasm. These feelings pull you toward things and make effort feel possible.",
       "color": "green" },
     { "id": "draining", "label": "Draining", "note": "Less activated and unpleasant. Sadness, grief, shame, guilt. These feelings slow you down — sometimes to grieve or repair, sometimes further than is helpful.",
-      "color": "slate" },
+      "color": "blue" },
     { "id": "soothing", "label": "Soothing", "note": "Less activated and pleasant. Warmth, comfort, safety, caring, connection. These feelings say that it is all right to rest, and that you are not alone.",
-      "color": "teal" }
+      "color": "purple" }
   ],
   "items": [
     { "id": "anger", "cell": "agitating", "label": "Anger" }, { "id": "frustration", "cell": "agitating", "label": "Frustration" },
