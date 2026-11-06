@@ -18,7 +18,13 @@ A look back, a plan for next week, some weekly numbers and a short guide, each o
 
 Delete the pieces you do not need. Copy and edit the ones you do.
 
-<!-- PIECE 1 of 4: Look back at the week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+
+- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
+- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
+- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+
+<!-- PIECE 1 of 4: Look back at the week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|look-back repeat icon:rotate-ccw] Look back at the week
 
@@ -55,7 +61,7 @@ limit: 4
 empty: No reviews yet.
 ```
 
-<!-- PIECE 2 of 4: Plan the next week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 2 of 4: Plan the next week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|plan-ahead repeat icon:target] Plan the next week
 
@@ -89,7 +95,7 @@ limit: 6
 empty: No plans yet.
 ```
 
-<!-- PIECE 3 of 4: Weekly numbers. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). Change the number questions to whatever you want to count. -->
+<!-- PIECE 3 of 4: Weekly numbers. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Change the number questions to whatever you want to count. -->
 
 > [!activity|weekly-numbers repeat icon:chart-line] Weekly numbers
 
@@ -105,16 +111,40 @@ Three counts for the week. Estimates are fine. The point is to see them change.
 
 > [!tab|trend] Trend
 
-Each week, side by side.
+Hours of focused work, week by week.
 
 ```booklet query
 from: weekly-numbers
 as: line
 label: date
-fields: focus-hours, tasks-done, free-evenings
+fields: focus-hours
 limit: 12
 empty: Nothing to draw yet. Add a week first.
 ```
+
+Tasks finished, week by week.
+
+```booklet query
+from: weekly-numbers
+as: line
+label: date
+fields: tasks-done
+limit: 12
+empty: Nothing to draw yet. Add a week first.
+```
+
+Evenings kept free, week by week.
+
+```booklet query
+from: weekly-numbers
+as: line
+label: date
+fields: free-evenings
+limit: 12
+empty: Nothing to draw yet. Add a week first.
+```
+
+All three in one table.
 
 ```booklet query
 from: weekly-numbers
@@ -123,7 +153,7 @@ fields: focus-hours, tasks-done, free-evenings
 limit: 8
 ```
 
-<!-- PIECE 4 of 4: How to run a review. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 4 of 4: How to run a review. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|how-to icon:book-open] How to run a review in 15 minutes
 
@@ -136,6 +166,8 @@ flowchart LR
   C --> D[Put them in your calendar]
 ```
 
+*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+
 1. **Look back (5 minutes).** Skim your calendar and your notes. What happened?
 2. **Notice (3 minutes).** What do you want more of? What do you want less of?
 3. **Choose (4 minutes).** Pick no more than three things for next week.
@@ -143,5 +175,7 @@ flowchart LR
 
 > [!tip] Keep it small
 > A review that takes five minutes and happens every week beats a perfect one you skip.
+
+<!-- END OF PIECES. Keep the module end line below. -->
 
 > [!module|tpl-weekly-review end] End of Weekly review template

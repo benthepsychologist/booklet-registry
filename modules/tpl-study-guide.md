@@ -18,11 +18,17 @@ A reading, flashcards, a quiz and a study log on a sample topic, each one a piec
 
 Delete the pieces you do not need. Copy and edit the ones you do.
 
-<!-- PIECE 1 of 4: The reading. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). Replace the sample topic with your own. -->
+To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+
+- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
+- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
+- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+
+<!-- PIECE 1 of 4: The reading. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Replace the sample topic with your own. -->
 
 > [!activity|reading icon:book-open] Read: why we have seasons
 
-Read this once, then try the flashcards and the quiz. It takes about five minutes.
+Read this once, slowly. It takes about five minutes.
 
 ## The short version
 
@@ -49,10 +55,12 @@ flowchart LR
   E --> F[Winter in the other half]
 ```
 
+*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+
 > [!note] Four days worth knowing
 > The two **solstices** are the longest and shortest days of the year. The two **equinoxes** fall between them, when day and night are close to equal everywhere.
 
-<!-- PIECE 2 of 4: Flashcards. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). Each card is one folded note: the term is the title and the answer is inside. -->
+<!-- PIECE 2 of 4: Flashcards. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Each card is one folded note: the term is the title and the answer is inside. -->
 
 > [!activity|flashcards icon:layers] Flashcards
 
@@ -73,7 +81,7 @@ Say the answer out loud first, then open the card to check.
 > [!note]- Season
 > A part of the year with its own typical weather and day length, caused by the tilt of the axis.
 
-<!-- PIECE 3 of 4: Quiz. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). In a pick-one or pick-any question, the correct option is marked with [x]. The reader sees at once whether they were right. Nothing is scored or stored. -->
+<!-- PIECE 3 of 4: Quiz. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). In a pick-one or pick-any question, the correct option is marked with [x]. The reader sees at once whether they were right. Nothing is scored or stored. Anyone who opens the file as text can read the [x] marks, so never use them for anything that must stay hidden. -->
 
 > [!activity|quiz icon:circle-help] Quiz: check yourself
 
@@ -113,7 +121,7 @@ Four questions. Pick an answer and you will see straight away whether it was rig
 > [!solution]- A sample answer
 > The Earth is tilted. When the northern half leans away from the Sun, it gets less direct light and shorter days, while the southern half leans toward the Sun and gets more.
 
-<!-- PIECE 4 of 4: Study log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 4 of 4: Study log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|study-log repeat icon:clipboard-list] Study log
 
@@ -157,5 +165,7 @@ value: minutes
 limit: 10
 empty: No sessions yet.
 ```
+
+<!-- END OF PIECES. Keep the module end line below. -->
 
 > [!module|tpl-study-guide end] End of Study guide template

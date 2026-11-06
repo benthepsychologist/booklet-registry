@@ -18,7 +18,13 @@ A morning plan, an evening entry, a list of small wins and some prompts, each on
 
 Delete the pieces you do not need. Copy and edit the ones you do.
 
-<!-- PIECE 1 of 4: Morning plan. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+
+- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
+- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
+- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+
+<!-- PIECE 1 of 4: Morning plan. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|morning-plan repeat daily icon:sunrise] Morning plan
 
@@ -30,7 +36,7 @@ A minute to set up the day. Skipping any line is fine.
 > [!text|leave-for-later] One thing to leave for later
 > Naming it can make it easier to put down.
 
-<!-- PIECE 2 of 4: Evening entry. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 2 of 4: Evening entry. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|evening-entry repeat daily icon:notebook-pen] Evening entry
 
@@ -39,7 +45,7 @@ A few minutes at the end of the day. Nothing has to be interesting, and an entry
 > [!tab|write] Write
 
 > [!text|what-happened long] What happened today?
-> As much or as little as you like. Nobody reads this.
+> As much or as little as you like. This stays in your note.
 
 > [!lines|worth-keeping] Worth keeping
 > One line each. A phrase is enough.
@@ -77,7 +83,7 @@ limit: 5
 empty: No entries yet.
 ```
 
-<!-- PIECE 3 of 4: Small wins. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 3 of 4: Small wins. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|small-wins repeat icon:sparkles] Small wins
 
@@ -105,7 +111,7 @@ limit: 10
 empty: Nothing yet. The first one is the hardest to notice.
 ```
 
-<!-- PIECE 4 of 4: Writing prompts. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 4 of 4: Writing prompts. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|prompts icon:lightbulb] Prompts for a blank page
 
@@ -124,5 +130,7 @@ Stuck on what to write? Pick one of these, or ignore them all.
 > - What was the best meal I had this week?
 > - What song has been in my head?
 > - What do I want to remember about this season?
+
+<!-- END OF PIECES. Keep the module end line below. -->
 
 > [!module|tpl-daily-journal end] End of Daily journal template

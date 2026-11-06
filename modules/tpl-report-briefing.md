@@ -18,7 +18,13 @@ The answer, the numbers, a diagram and a few closing questions on a sample repor
 
 Delete the pieces you do not need. Copy and edit the ones you do.
 
-<!-- PIECE 1 of 4: The answer. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name, including the ^headline label under the data). The tiles are the rows in the data block: change the words and figures there. Write money and percentages as text, like "$420" or "62%". -->
+To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+
+- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
+- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
+- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+
+<!-- PIECE 1 of 4: The answer. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id, the names in its queries and the ^headline label under the data, as the top of the module says). The tiles are the rows in the data block: change the words and figures there. Write money and percentages as text, like "$420" or "62%". -->
 
 > [!activity|the-answer icon:flag] Read the answer
 
@@ -41,7 +47,7 @@ as: tiles
 ```
 ^headline
 
-<!-- PIECE 2 of 4: The numbers. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name, including the ^by-hour label under the data). The chart is drawn from the data block: change the rows there. The page adds nothing up, so write each figure in already worked out. -->
+<!-- PIECE 2 of 4: The numbers. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id, the names in its queries and the ^by-hour label under the data, as the top of the module says). The chart is drawn from the data block: change the rows there. The page adds nothing up, so write each figure in already worked out. -->
 
 > [!activity|the-numbers icon:chart-column] See the numbers
 
@@ -76,7 +82,7 @@ $$\text{cost of a Sunday} = \text{staff} \times \text{hours open} \times \text{h
 
 With 3 staff, 6 hours and a rate of 18 dollars an hour, that is $3 \times 6 \times 18 = 324$ dollars. This assumes the same three people every Sunday and no extra cleaning.
 
-<!-- PIECE 3 of 4: How it works. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). The diagram is a mermaid block: edit the words inside the boxes. -->
+<!-- PIECE 3 of 4: How it works. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). The diagram is a mermaid block: edit the words inside the boxes. -->
 
 > [!activity|how-it-works icon:route] See how the trial worked
 
@@ -92,10 +98,12 @@ flowchart LR
   E --> F[Decide]
 ```
 
+*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+
 > [!note] What was counted
 > At the door, a volunteer tallied each visitor by the hour. At the desk, staff noted each book borrowed. Nothing else was recorded.
 
-<!-- PIECE 4 of 4: Your view. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 4 of 4: Your view. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|your-view icon:message-circle] Give your view
 
@@ -115,5 +123,7 @@ A few questions to finish. Answer what you like and skip the rest.
 4. Very well
 
 > [!text|more-info long] What else would you want to know before deciding?
+
+<!-- END OF PIECES. Keep the module end line below. -->
 
 > [!module|tpl-report-briefing end] End of Report or briefing template

@@ -18,7 +18,13 @@ A daily tick-list, a weekly look back and some habit ideas, each one a piece you
 
 Delete the pieces you do not need. Copy and edit the ones you do.
 
-<!-- PIECE 1 of 4: Daily habits. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). To change the habits, edit the list of options under "Which habits did you do today?". -->
+To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+
+- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
+- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
+- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+
+<!-- PIECE 1 of 4: Daily habits. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). To change the habits, edit the list of options under "Which habits did you do today?". -->
 
 > [!activity|daily-habits repeat daily icon:list-checks] Today's habits
 
@@ -77,7 +83,7 @@ limit: 14
 empty: Nothing to draw yet. Come back after a few days.
 ```
 
-<!-- PIECE 2 of 4: Weekly look back. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 2 of 4: Weekly look back. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|weekly-habits repeat icon:calendar] Weekly look back
 
@@ -102,7 +108,7 @@ limit: 4
 empty: No weekly reviews yet.
 ```
 
-<!-- PIECE 3 of 4: Habit ideas. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 3 of 4: Habit ideas. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|habit-ideas icon:lightbulb] Habit ideas
 
@@ -111,16 +117,16 @@ Not sure what to track? Here are some small ones, with a way to make each easier
 | Habit | A small way to start |
 | --- | --- |
 | Drink water | Keep a glass by the kettle |
-| Walk | Ten minutes after lunch |
-| Read | One page before bed |
+| Walk | Right after lunch |
+| Read | Keep a book by the bed |
 | Stretch | While the kettle boils |
-| Tidy | One drawer, once |
-| Write | One line in a journal |
+| Tidy | Pick one small spot |
+| Write | Keep a notebook handy |
 
 > [!tip] Start smaller than you think
 > A habit you can do on your worst day is easier to keep than one that needs your best day.
 
-<!-- PIECE 4 of 4: Habit log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (give every id in the copy a new name). -->
+<!-- PIECE 4 of 4: Habit log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
 
 > [!activity|new-habit-log repeat icon:flag] Try a new habit
 
@@ -146,5 +152,7 @@ badge: how-it-went
 limit: 14
 empty: Nothing yet.
 ```
+
+<!-- END OF PIECES. Keep the module end line below. -->
 
 > [!module|tpl-habit-tracker end] End of Habit tracker template
