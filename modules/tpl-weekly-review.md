@@ -160,13 +160,13 @@ limit: 8
 A simple order that works. Most people do it on Friday afternoon or Sunday evening.
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Look back] --> B[Notice what matters]
   B --> C[Pick three things]
   C --> D[Put them in your calendar]
 ```
 
-*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
 
 1. **Look back (5 minutes).** Skim your calendar and your notes. What happened?
 2. **Notice (3 minutes).** What do you want more of? What do you want less of?

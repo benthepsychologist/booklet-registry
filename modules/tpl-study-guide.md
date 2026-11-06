@@ -47,15 +47,16 @@ When a hemisphere leans toward the Sun:
 At the same time the other hemisphere leans away, so it is winter there.
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Axis tilted about 23 degrees] --> B[One half leans toward the Sun]
-  B --> C[Higher Sun and longer days]
-  C --> D[Summer in that half]
-  B --> E[The other half leans away]
-  E --> F[Winter in the other half]
+  A --> E[The other half leans away]
+  B --> C[Higher Sun, longer days]
+  E --> G[Lower Sun, shorter days]
+  C --> D[Summer]
+  G --> F[Winter]
 ```
 
-*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
 
 > [!note] Four days worth knowing
 > The two **solstices** are the longest and shortest days of the year. The two **equinoxes** fall between them, when day and night are close to equal everywhere.

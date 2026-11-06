@@ -122,16 +122,14 @@ empty: Nothing logged yet.
 The main steps on one page, and where the effort goes. The figures are made up. Replace them with yours.
 
 ```mermaid
-timeline
-  title The plan
-  Week 1 : Agree the date and budget : Book the hall
-  Week 2 : Invite people : Order snacks
-  Week 3 : Print posters : Set up the room
-  Event day : Run the event
-  Afterwards : Thank the helpers
+flowchart TD
+  A[Week 1: agree the date and budget, book the hall] --> B[Week 2: invite people, order snacks]
+  B --> C[Week 3: print posters, set up the room]
+  C --> D[Event day: run the event]
+  D --> E[Afterwards: thank the helpers]
 ```
 
-*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
 
 Hours of work by area (an estimate).
 

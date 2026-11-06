@@ -89,7 +89,7 @@ With 3 staff, 6 hours and a rate of 18 dollars an hour, that is $3 \times 6 \tim
 The steps of the trial, in order.
 
 ```mermaid
-flowchart LR
+flowchart TD
   A[Plan the rota] --> B[Open on Sunday]
   B --> C[Count visitors and loans]
   C --> D{Eight Sundays done?}
@@ -98,7 +98,7 @@ flowchart LR
   E --> F[Decide]
 ```
 
-*In Obsidian, a diagram draws after Obsidian's one-time Allow for the vault, and appears when the note is drawn again, for example when it is opened again.*
+*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
 
 > [!note] What was counted
 > At the door, a volunteer tallied each visitor by the hour. At the desk, staff noted each book borrowed. Nothing else was recorded.
