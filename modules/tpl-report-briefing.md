@@ -90,12 +90,10 @@ The steps of the trial, in order.
 
 ```mermaid
 flowchart TD
-  A[Plan the rota] --> B[Open on Sunday]
+  A[Plan the rota] --> B[Open on eight Sundays]
   B --> C[Count visitors and loans]
-  C --> D{Eight Sundays done?}
-  D -- no --> B
-  D -- yes --> E[Review the figures]
-  E --> F[Decide]
+  C --> D[Review the figures]
+  D --> E[Decide]
 ```
 
 *In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*

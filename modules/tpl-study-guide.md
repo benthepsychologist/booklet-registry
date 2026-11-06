@@ -48,12 +48,9 @@ At the same time the other hemisphere leans away, so it is winter there.
 
 ```mermaid
 flowchart TD
-  A[Axis tilted about 23 degrees] --> B[One half leans toward the Sun]
-  A --> E[The other half leans away]
+  A[Tilted axis] --> B[A half leans toward the Sun]
   B --> C[Higher Sun, longer days]
-  E --> G[Lower Sun, shorter days]
-  C --> D[Summer]
-  G --> F[Winter]
+  C --> D[Summer there]
 ```
 
 *In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
