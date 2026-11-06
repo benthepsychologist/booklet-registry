@@ -12,23 +12,9 @@
  },
  "modules": [
   {
-   "id": "example-daily-journal",
+   "id": "btp-check-in",
    "version": "0.1",
-   "file": "modules/daily-journal.md",
-   "title": "Daily journal",
-   "blurb": "A few minutes at the end of a day. Nothing has to be interesting.",
-   "languages": [
-    "en"
-   ],
-   "engines": [],
-   "rights": {
-    "license": "Apache-2.0"
-   }
-  },
-  {
-   "id": "mensio-check-in",
-   "version": "0.1",
-   "file": "modules/mensio-check-in.md",
+   "file": "modules/btp-check-in.md",
    "title": "A mindful check-in",
    "blurb": "Body, feelings, thoughts — noticed, named, kept.",
    "languages": [
@@ -45,9 +31,9 @@
    }
   },
   {
-   "id": "mensio-the-day",
+   "id": "btp-the-day",
    "version": "0.2",
-   "file": "modules/mensio-the-day.md",
+   "file": "modules/btp-the-day.md",
    "title": "Have a good day",
    "blurb": "What needs to happen today.",
    "languages": [
@@ -61,9 +47,9 @@
    }
   },
   {
-   "id": "mensio-the-guide",
+   "id": "btp-the-guide",
    "version": "0.1",
-   "file": "modules/mensio-the-guide.md",
+   "file": "modules/btp-the-guide.md",
    "title": "A short guide to the four quadrants",
    "blurb": "How the check-in's map of feelings is put together, and what to do with what you notice.",
    "languages": [
@@ -76,6 +62,104 @@
     "license": "Free to copy and share, unmodified and with this notice intact. Not licensed for modification or for redistribution in altered form. This grant covers this version; later versions may differ.",
     "copyright": "© 2026 Benjamin F. Armstrong III. All rights reserved.",
     "source": "https://benthepsychologist.com/tools/activity-kit/"
+   }
+  },
+  {
+   "id": "example-daily-journal",
+   "version": "0.1",
+   "file": "modules/daily-journal.md",
+   "title": "Daily journal",
+   "blurb": "A few minutes at the end of a day. Nothing has to be interesting.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-daily-journal",
+   "version": "0.1",
+   "file": "modules/tpl-daily-journal.md",
+   "title": "Daily journal template",
+   "blurb": "A morning plan, an evening entry, a list of small wins and some prompts, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-habit-tracker",
+   "version": "0.1",
+   "file": "modules/tpl-habit-tracker.md",
+   "title": "Habit tracker template",
+   "blurb": "A daily tick-list, a weekly look back and some habit ideas, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-project-board",
+   "version": "0.1",
+   "file": "modules/tpl-project-board.md",
+   "title": "Project board template",
+   "blurb": "A board, a task inbox, a project log and a plan at a glance, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-report-briefing",
+   "version": "0.1",
+   "file": "modules/tpl-report-briefing.md",
+   "title": "Report or briefing template",
+   "blurb": "The answer, the numbers, a diagram and a few closing questions on a sample report, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-study-guide",
+   "version": "0.1",
+   "file": "modules/tpl-study-guide.md",
+   "title": "Study guide template",
+   "blurb": "A reading, flashcards, a quiz and a study log on a sample topic, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-weekly-review",
+   "version": "0.1",
+   "file": "modules/tpl-weekly-review.md",
+   "title": "Weekly review template",
+   "blurb": "A look back, a plan for next week, some weekly numbers and a short guide, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
    }
   },
   {

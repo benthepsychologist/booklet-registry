@@ -1,6 +1,6 @@
 ---
 booklet: "0.18"
-id: mensio/the-day
+id: btp/the-day
 title: Have a good day
 lang: en
 version: "0.2"
@@ -27,7 +27,7 @@ rather than faked. -->
 <!-- Adding it to a booklet: Open this file on its own, or copy everything below the front matter into
 your own booklet, above the long rule. -->
 
-> [!module|mensio-the-day] Have a good day
+> [!module|btp-the-day] Have a good day
 
 What needs to happen today.
 
@@ -59,4 +59,4 @@ Not the to-do list, and not a target. The question is what has to be there for y
 > > [!text|carry] One thing to carry forward
 > > From yesterday, or from the last entry.
 
-> [!module|mensio-the-day end] End of Have a good day
+> [!module|btp-the-day end] End of Have a good day
