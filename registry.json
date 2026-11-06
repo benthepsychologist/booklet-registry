@@ -79,6 +79,90 @@
    }
   },
   {
+   "id": "tpl-daily-journal",
+   "version": "0.1",
+   "file": "modules/tpl-daily-journal.md",
+   "title": "Daily journal template",
+   "blurb": "A morning plan, an evening entry, a list of small wins and some prompts, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-habit-tracker",
+   "version": "0.1",
+   "file": "modules/tpl-habit-tracker.md",
+   "title": "Habit tracker template",
+   "blurb": "A daily tick-list, a weekly look back and some habit ideas, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-project-board",
+   "version": "0.1",
+   "file": "modules/tpl-project-board.md",
+   "title": "Project board template",
+   "blurb": "A board, a task inbox, a project log and a plan at a glance, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-report-briefing",
+   "version": "0.1",
+   "file": "modules/tpl-report-briefing.md",
+   "title": "Report or briefing template",
+   "blurb": "The answer, the numbers, a diagram and a few closing questions on a sample report, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-study-guide",
+   "version": "0.1",
+   "file": "modules/tpl-study-guide.md",
+   "title": "Study guide template",
+   "blurb": "A reading, flashcards, a quiz and a study log on a sample topic, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
+   "id": "tpl-weekly-review",
+   "version": "0.1",
+   "file": "modules/tpl-weekly-review.md",
+   "title": "Weekly review template",
+   "blurb": "A look back, a plan for next week, some weekly numbers and a short guide, each one a piece you can keep or delete.",
+   "languages": [
+    "en"
+   ],
+   "engines": [],
+   "rights": {
+    "license": "Apache-2.0"
+   }
+  },
+  {
    "id": "example-what-is-a-booklet",
    "version": "0.1",
    "file": "modules/what-is-a-booklet.md",
