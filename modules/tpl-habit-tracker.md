@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/habit-tracker
 title: Habit tracker template
 description: A starter habit tracker with a daily tick-list, a weekly look back and a short list of habit ideas.

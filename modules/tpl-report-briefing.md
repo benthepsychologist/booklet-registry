@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/report-briefing
 title: Report or briefing template
 description: A starter report to be read, with an answer up front, headline numbers, a chart, a formula, a diagram and a few closing questions.

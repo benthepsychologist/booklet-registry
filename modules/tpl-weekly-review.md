@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/weekly-review
 title: Weekly review template
 description: A starter weekly review with a look back at the week, a plan for the next one, a few weekly numbers and a short guide.

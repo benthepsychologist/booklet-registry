@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/study-guide
 title: Study guide template
 description: A starter study guide with a short reading, flashcards, a self-marking quiz and a study log.
