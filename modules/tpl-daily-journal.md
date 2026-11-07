@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/daily-journal
 title: Daily journal template
 description: A starter daily journal with a morning plan, an evening entry, a list of small wins and a few prompts.

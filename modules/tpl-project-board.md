@@ -1,5 +1,5 @@
 ---
-booklet: "0.18"
+booklet: "0.19"
 id: template/project-board
 title: Project board template
 description: A starter project board with tasks by stage, a task inbox, a project log and a plan at a glance.
