@@ -42,8 +42,8 @@ A card for each thing to remember: a question or a word on the front, the answer
 
 ```booklet query
 from: cards
-as: cards
-label: front
+as: table
+fields: front
 add
 delete
 empty: No cards yet. Add the first one.
@@ -56,7 +56,7 @@ empty: No cards yet. Add the first one.
 
 ```booklet data
 { "fields": { "front": { "label": "Front", "edit": "text" }, "back": { "label": "Back", "edit": "long" } },
-  "idFormat": "card-{n}",
+  "idFormat": "{field:front}",
   "rows": [] }
 ```
 ^cards

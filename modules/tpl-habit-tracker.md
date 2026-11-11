@@ -33,7 +33,7 @@ empty: No habits yet. Add your first one.
 
 ```booklet data
 { "fields": { "habit": { "label": "Habit", "edit": "text" }, "cue": { "label": "When, or after what", "edit": "text" } },
-  "idFormat": "habit-{n}",
+  "idFormat": "{field:habit}",
   "rows": [] }
 ```
 ^habits
@@ -41,8 +41,6 @@ empty: No habits yet. Add your first one.
 > [!activity|today repeat daily icon:check] Today
 
 Once a day, mark each habit. If you come back later the same day, you can change what you marked.
-
-> [!tab|mark] Today
 
 ```booklet query
 from: habits
@@ -58,18 +56,6 @@ empty: No habits yet. Add them under My habits.
 
 > [!text|habit-note] Anything to note?
 > One line, or nothing.
-
-> [!tab|last-seven] Last seven days
-
-What you marked, day by day.
-
-```booklet query
-from: today
-as: table
-fields: done, habit-note
-limit: 7 days
-empty: Nothing marked yet. Start on the Today tab.
-```
 
 <!-- Piece: Weekly look back -->
 

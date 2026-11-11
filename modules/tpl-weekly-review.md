@@ -95,9 +95,7 @@ empty: No plans yet.
 
 A few things to count each week. Estimates are fine: the point is to see them change.
 
-> [!tab|count] This week
-
-Add the things you want to count, such as hours of focused work, tasks finished or evenings kept free, and put in this week's number for each. Rename one, or remove one you no longer need.
+Add the things you want to count, such as hours of focused work, tasks finished or evenings kept free, and put in this week's number for each. Earlier weeks' numbers stay listed under each one. Rename one, or remove one you no longer need.
 
 ```booklet query
 from: counts
@@ -112,33 +110,10 @@ empty: Nothing to count yet. Add the first thing.
 
 ```booklet data
 { "fields": { "what": { "label": "What I count", "edit": "text" } },
-  "idFormat": "count-{n}",
+  "idFormat": "{field:what}",
   "rows": [] }
 ```
 ^counts
-
-> [!tab|trend] Trend
-
-Each count, week by week.
-
-```booklet query
-from: weekly-numbers
-as: line
-label: date
-fields: this-week
-limit: 12
-empty: Nothing to draw yet. Add a week first.
-```
-
-The same numbers in a table.
-
-```booklet query
-from: weekly-numbers
-as: table
-fields: this-week
-limit: 12
-empty: No weeks yet.
-```
 
 <!-- Piece: How to run a review -->
 
