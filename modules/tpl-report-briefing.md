@@ -2,7 +2,7 @@
 booklet: "0.20"
 id: my/report
 title: Report
-description: A short report to be read, with the answer first, the figures behind it, how the work was done and a few questions to finish.
+description: A short report to be read, with the answer first, the figures behind it, how the work was done and a few questions to finish. Words in square brackets are placeholders for your own.
 lang: en
 version: "0.2"
 license: Apache-2.0
@@ -21,8 +21,6 @@ license: Apache-2.0
 > [!activity|the-answer icon:flag] The answer
 
 The answer first, then the figures behind it.
-
-## The answer
 
 [Your answer or recommendation, in one sentence.]
 

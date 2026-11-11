@@ -2,7 +2,7 @@
 booklet: "0.20"
 id: my/study-guide
 title: Study guide
-description: What you are studying, flashcards you write yourself, a short quiz to write, and a log of your study sessions.
+description: What you are studying, flashcards you write yourself, a short quiz for you or a teacher to write, and a log of your study sessions.
 lang: en
 version: "0.2"
 license: Apache-2.0
@@ -10,11 +10,11 @@ license: Apache-2.0
 
 # Study guide
 
-For anything you are learning: say what you are studying and what you need to know, test yourself with your own flashcards, write a short quiz, and keep a log of your sessions.
+For anything you are learning: say what you are studying and what you need to know, test yourself with your own flashcards, keep a log of your sessions, and, if you or a teacher write one, take a short quiz.
 
 > [!module|study-guide] Study guide
 
-What you are studying, your own flashcards, a quiz to write and a study log.
+What you are studying, your own flashcards, a short quiz and a study log.
 
 <!-- Piece: What I am studying -->
 
@@ -65,7 +65,7 @@ empty: No cards yet. Add the first one.
 
 > [!activity|quiz icon:circle-help] Quiz
 
-Pick an answer and you will see straight away whether it was right. Nothing is scored.
+Answer each question, then check yourself. Nothing is scored.
 
 > [!choice|q1] [Your first question]
 - [x] [The right answer]
@@ -78,7 +78,7 @@ Pick an answer and you will see straight away whether it was right. Nothing is s
 > [!hint]- Hint
 > [A nudge toward the answer.]
 
-> [!multi|q2] [A question with more than one right answer. Pick every one.]
+> [!multi|q2] [A question with more than one right answer.] Pick every one.
 - [x] [A right answer]
 - [x] [Another right answer]
 - [ ] [A wrong answer]
@@ -87,7 +87,7 @@ Pick an answer and you will see straight away whether it was right. Nothing is s
 > [Why those are the right ones.]
 
 > [!text|q3 long] [A question to answer in your own words]
-> [How long the answer should be.]
+> [A hint on how much to write, such as "Two or three sentences."]
 
 > [!solution]- A sample answer
 > [A good answer, to check against.]
@@ -96,7 +96,7 @@ Pick an answer and you will see straight away whether it was right. Nothing is s
 
 > [!activity|study-log repeat icon:clipboard-list] Study log
 
-Add a line each time you study. It helps to see how much you have done.
+Log a session each time you study. It helps to see how much you have done.
 
 > [!tab|log] Log a session
 

@@ -86,7 +86,8 @@ Add one whenever something small goes right. A cup of tea made properly counts.
 > [!text|win] What went right?
 > A sentence is plenty.
 
-> [!choice|win-kind open] What kind of win was it? Add your own.
+> [!choice|win-kind open] What kind of win was it?
+> Pick one, or add your own.
 - [ ] Something I made
 - [ ] Something I finished
 - [ ] Something I noticed
@@ -107,7 +108,7 @@ empty: Nothing yet. The first one is the hardest to notice.
 
 > [!activity|prompts icon:lightbulb] Prompts for a blank page
 
-Stuck on what to write? Pick one of these, or ignore them all.
+Stuck on what to write in the evening entry? Pick one of these, or ignore them all.
 
 > [!note] How to use these
 > Choose one prompt, set a timer for five minutes, and write until it rings. It does not have to be good.

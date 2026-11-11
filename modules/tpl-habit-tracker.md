@@ -20,7 +20,7 @@ Your habits, marked once a day, a weekly look back and a few ideas to start from
 
 > [!activity|my-habits repeat icon:list-checks] My habits
 
-The habits you want to keep up. Add one, change its name or its moment, and remove one you have let go. Two or three is a good start.
+The habits you want to keep up. Add one, change its name or when you do it, and remove one you have let go. Two or three is a good start.
 
 ```booklet query
 from: habits
@@ -51,7 +51,7 @@ fields: habit, done
 empty: No habits yet. Add them under My habits.
 ```
 
-> [!choice|done each:habits] Today
+> [!choice|done each:habits] How did it go?
 - [ ] Done
 - [ ] A smaller version
 - [ ] Not today
@@ -59,9 +59,9 @@ empty: No habits yet. Add them under My habits.
 > [!text|habit-note] Anything to note?
 > One line, or nothing.
 
-> [!tab|this-week] This week
+> [!tab|last-seven] Last seven days
 
-The last seven days.
+What you marked, day by day.
 
 ```booklet query
 from: today
@@ -100,14 +100,14 @@ empty: No weekly reviews yet.
 
 > [!activity|habit-ideas icon:lightbulb] Habit ideas
 
-Not sure where to start? Some small habits, each with an easy way in.
+Not sure where to start? Some small habits, each with an easy way in. Add the ones you like under My habits.
 
 | Habit | A small way to start |
 | --- | --- |
 | Drink water | Keep a glass by the kettle |
 | Walk | Right after lunch |
 | Read | Keep a book by the bed |
-| Stretch | While the kettle boils |
+| Stretch | Before you sit down to work |
 | Tidy | Pick one small spot |
 | Write | Keep a notebook handy |
 

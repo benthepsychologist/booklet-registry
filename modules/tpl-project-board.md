@@ -10,7 +10,7 @@ license: Apache-2.0
 
 # Project board
 
-One project on one page: what it is and what done looks like, its tasks by stage, the milestones that mark real progress, and a log of what happened along the way.
+One project on one page: what it is and what done looks like, its tasks by stage, the milestones that mark real progress, and a log of what happened along the way. For another project, use another copy of this booklet.
 
 > [!module|project-board] Project board
 
@@ -34,7 +34,7 @@ A few lines to say what this is. Come back and change them as the project change
 > Names, or leave it blank.
 
 > [!text|not-doing] What is not part of it?
-> Naming it now keeps the project a size you can finish.
+> Naming it keeps the project a size you can finish.
 
 <!-- Piece: The board -->
 
@@ -75,7 +75,7 @@ The few points that mark real progress, each with the date you aim for.
 ```booklet query
 from: milestone-rows
 as: table
-fields: milestone, aim, reached
+fields: milestone, aim, status
 add
 delete
 empty: No milestones yet. Add the first one.
@@ -85,7 +85,7 @@ empty: No milestones yet. Add the first one.
 { "fields": {
     "milestone": { "label": "Milestone", "edit": "text" },
     "aim": { "label": "Aim for", "edit": "date" },
-    "reached": { "label": "Reached", "edit": "choice", "options": ["Not yet", "Reached"] } },
+    "status": { "label": "Status", "edit": "choice", "options": ["Not yet", "Reached"] } },
   "idFormat": "milestone-{n}",
   "rows": [] }
 ```
@@ -102,7 +102,8 @@ A line or two each time something happens: a decision, a blocker, a bit of progr
 > [!text|what-happened] What happened?
 > Short is fine.
 
-> [!choice|kind open] What kind of update is it? Add your own.
+> [!choice|kind open] What kind of update is it?
+> Pick one, or add your own.
 - [ ] Progress
 - [ ] Decision
 - [ ] Blocker

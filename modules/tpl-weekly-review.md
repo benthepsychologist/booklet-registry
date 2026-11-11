@@ -20,7 +20,7 @@ A look back, a plan for next week, the numbers you count and a short guide.
 
 > [!activity|look-back repeat icon:rotate-ccw] Look back at the week
 
-Ten minutes, once a week. Answer what you like and skip the rest.
+A few minutes, once a week. Answer what you like and skip the rest.
 
 > [!tab|review] Review
 
@@ -33,7 +33,7 @@ Ten minutes, once a week. Answer what you like and skip the rest.
 > [!text|was-hard long] What was hard or got stuck?
 > No blame. Just what happened.
 
-> [!choice|pace] How did the pace feel?
+> [!choice|pace] How was the pace?
 - [ ] Too slow
 - [ ] About right
 - [ ] Too fast
@@ -73,6 +73,8 @@ Choose a few things and leave the rest. Three is plenty.
 - [ ] Wednesday
 - [ ] Thursday
 - [ ] Friday
+- [ ] Saturday
+- [ ] Sunday
 
 > [!text|dont-forget long] Anything I should not forget?
 
@@ -81,8 +83,8 @@ Choose a few things and leave the rest. Three is plenty.
 ```booklet query
 from: plan-ahead
 as: list
-label: focus-day
-fields: top-three
+label: date
+fields: focus-day, top-three
 limit: 6
 empty: No plans yet.
 ```
@@ -106,7 +108,7 @@ delete
 empty: Nothing to count yet. Add the first thing.
 ```
 
-> [!number|this-week each:counts min:0] This week
+> [!number|this-week each:counts min:0] How many this week?
 
 ```booklet data
 { "fields": { "what": { "label": "What I count", "edit": "text" } },
@@ -134,7 +136,7 @@ The same numbers in a table.
 from: weekly-numbers
 as: table
 fields: this-week
-limit: 8
+limit: 12
 empty: No weeks yet.
 ```
 
@@ -142,13 +144,13 @@ empty: No weeks yet.
 
 > [!activity|how-to icon:book-open] How to run a review in 15 minutes
 
-A simple order that works. Most people do it on Friday afternoon or Sunday evening.
+A simple order that works. Pick a time you can keep, such as Friday afternoon or Sunday evening.
 
 ```mermaid
 flowchart TD
   A[Look back] --> B[Notice what matters]
-  B --> C[Pick three things]
-  C --> D[Put them in your calendar]
+  B --> C[Choose three things]
+  C --> D[Place them in your calendar]
 ```
 
 *In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
