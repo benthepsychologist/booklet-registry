@@ -1,91 +1,97 @@
 ---
-booklet: "0.19"
-id: template/project-board
-title: Project board template
-description: A starter project board with tasks by stage, a task inbox, a project log and a plan at a glance.
+booklet: "0.20"
+id: my/project-board
+title: Project board
+description: One project on one page, with what it is, its tasks by stage, its milestones and a log of what happened.
 lang: en
-version: "0.1"
+version: "0.2"
 license: Apache-2.0
 ---
 
-# Project board template
+# Project board
 
-A starter for a small project, whether it is a school project, a club event or a home renovation: a board that shows tasks by stage, a place to jot down new tasks, a running log of what happened and a one-page plan. All the tasks and names in it are made up. Delete the pieces you do not need. Copy and edit the ones you do.
+One project on one page: what it is and what done looks like, its tasks by stage, the milestones that mark real progress, and a log of what happened along the way. For another project, use another copy of this booklet.
 
-> [!module|tpl-project-board] Project board template
+> [!module|project-board] Project board
 
-A board, a task inbox, a project log and a plan at a glance, each one a piece you can keep or delete.
+What the project is, its tasks by stage, its milestones and a log of what happened.
 
-Delete the pieces you do not need. Copy and edit the ones you do.
+<!-- Piece: The project -->
 
-To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+> [!activity|the-project icon:file-text] The project
 
-- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
-- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
-- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+A few lines to say what this is. Come back and change them as the project changes.
 
-<!-- PIECE 1 of 4: The board. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, and the ^board-rows label under the data, as the top of the module says). The tasks are the rows in the data block below: change a task's stage, owner or due date by editing its row. -->
+> [!text|what] What is the project?
+> One or two sentences.
 
-> [!activity|board icon:layout-grid] The board
+> [!text|done-looks-like long] What does done look like?
+> How you will know it is finished.
 
-Every task, grouped by stage in the order the rows are written. To move a task, change its stage in the rows under this piece.
+> [!date|deadline] When should it be done?
+
+> [!text|who] Who is involved?
+> Names, or leave it blank.
+
+> [!text|not-doing] What is not part of it?
+> Naming it keeps the project a size you can finish.
+
+<!-- Piece: The board -->
+
+> [!activity|board repeat icon:layout-grid] The board
+
+Every task, by stage. Add a task, move it on by changing its stage, and remove one that no longer matters.
 
 ```booklet query
-from: board-rows
+from: tasks
 as: list
 group: stage
-fields: owner, due
+label: task
+note: note
+fields: stage, who, due
+add
+delete
+empty: No tasks yet. Add the first one.
 ```
 
 ```booklet data
-{ "fields": { "label": "Task", "stage": "Stage", "badge": "Area", "owner": "Owner", "due": "Due", "note": "Note", "tone": "Tone" },
-  "rows": [
-    { "label": "Print the posters", "stage": "To do", "badge": "words", "owner": "Sam", "due": "Next Mon" },
-    { "label": "Set up the chairs", "stage": "To do", "badge": "venue", "owner": "Jo", "due": "Next Fri" },
-    { "label": "Thank the helpers", "stage": "To do", "badge": "people", "owner": "Priya", "due": "After" },
-    { "label": "Draft the invitation", "stage": "Doing", "badge": "words", "owner": "Priya", "due": "Thu", "note": "First draft is in the shared folder" },
-    { "label": "Order the snacks", "stage": "Doing", "badge": "food", "owner": "Jo", "due": "Fri", "tone": "warn", "note": "Waiting on a price" },
-    { "label": "Agree the date and the budget", "stage": "Done", "badge": "plan", "owner": "Sam", "due": "Mon", "tone": "good" },
-    { "label": "Book the hall", "stage": "Done", "badge": "venue", "owner": "Priya", "due": "Tue", "tone": "good" } ] }
+{ "fields": {
+    "task": { "label": "Task", "edit": "text" },
+    "stage": { "label": "Stage", "edit": "choice", "options": ["To do", "Doing", "Done"] },
+    "who": { "label": "Who", "edit": "text" },
+    "due": { "label": "Due", "edit": "date" },
+    "note": { "label": "Note", "edit": "long" } },
+  "idFormat": "task-{n}",
+  "rows": [] }
 ```
-^board-rows
+^tasks
 
-<!-- PIECE 2 of 4: Task inbox. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+<!-- Piece: Milestones -->
 
-> [!activity|task-inbox repeat icon:inbox] Task inbox
+> [!activity|milestones repeat icon:milestone] Milestones
 
-Jot a task down the moment you think of it, and keep it here until you have a place for it.
-
-> [!tab|add] Add a task
-
-> [!text|task] What needs doing?
-> One short line.
-
-> [!text|who] Who will do it?
-> A name, or leave it blank.
-
-> [!choice|stage] Where does it stand?
-- [ ] To do
-- [ ] Doing
-- [ ] Done
-
-> [!date|due] When is it due?
-
-> [!tab|all-tasks] All tasks
-
-Everything you have added, newest first.
+The few points that mark real progress, each with the date you aim for.
 
 ```booklet query
-from: task-inbox
-as: list
-label: task
-badge: stage
-fields: who, due
-limit: 20
-empty: No tasks yet. Add the first on the other tab.
+from: milestone-rows
+as: table
+fields: milestone, aim, status
+add
+delete
+empty: No milestones yet. Add the first one.
 ```
 
-<!-- PIECE 3 of 4: Project log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+```booklet data
+{ "fields": {
+    "milestone": { "label": "Milestone", "edit": "text" },
+    "aim": { "label": "Aim for", "edit": "date" },
+    "status": { "label": "Status", "edit": "choice", "options": ["Not yet", "Reached"] } },
+  "idFormat": "milestone-{n}",
+  "rows": [] }
+```
+^milestone-rows
+
+<!-- Piece: Project log -->
 
 > [!activity|project-log repeat icon:notebook-pen] Project log
 
@@ -96,7 +102,8 @@ A line or two each time something happens: a decision, a blocker, a bit of progr
 > [!text|what-happened] What happened?
 > Short is fine.
 
-> [!choice|kind open] What kind of update is it? Add your own.
+> [!choice|kind open] What kind of update is it?
+> Pick one, or add your own.
 - [ ] Progress
 - [ ] Decision
 - [ ] Blocker
@@ -115,39 +122,6 @@ limit: 15
 empty: Nothing logged yet.
 ```
 
-<!-- PIECE 4 of 4: Plan at a glance. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id, the names in its queries and the ^effort label under the data, as the top of the module says). -->
+<!-- End of pieces -->
 
-> [!activity|plan-glance icon:route] Plan at a glance
-
-The main steps on one page, and where the effort goes. The figures are made up. Replace them with yours.
-
-```mermaid
-flowchart TD
-  A[Week 1: agree the date and budget, book the hall] --> B[Week 2: invite people, order snacks]
-  B --> C[Week 3: print posters, set up the room]
-  C --> D[Event day: run the event]
-  D --> E[Afterwards: thank the helpers]
-```
-
-*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
-
-Hours of work by area (an estimate).
-
-```booklet query
-from: effort
-as: bars
-label: area
-value: hours
-```
-
-```booklet data
-[ { "area": "Venue", "hours": 6 },
-  { "area": "Words", "hours": 8 },
-  { "area": "Food", "hours": 4, "tone": "warn" },
-  { "area": "People", "hours": 5, "tone": "good" } ]
-```
-^effort
-
-<!-- END OF PIECES. Keep the module end line below. -->
-
-> [!module|tpl-project-board end] End of Project board template
+> [!module|project-board end] End of Project board
