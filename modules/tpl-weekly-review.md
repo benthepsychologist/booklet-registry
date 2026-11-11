@@ -1,30 +1,22 @@
 ---
-booklet: "0.19"
-id: template/weekly-review
-title: Weekly review template
-description: A starter weekly review with a look back at the week, a plan for the next one, a few weekly numbers and a short guide.
+booklet: "0.20"
+id: my/weekly-review
+title: Weekly review
+description: A look back at the week, a plan for the next one, the numbers you choose to count, and a short guide.
 lang: en
-version: "0.1"
+version: "0.2"
 license: Apache-2.0
 ---
 
-# Weekly review template
+# Weekly review
 
-A starter for a fifteen-minute review once a week: look back at what happened, choose what matters next week, and keep a few simple numbers so you can see the weeks side by side. The questions are only samples. Rewrite them to fit your own work or home life. Delete the pieces you do not need. Copy and edit the ones you do.
+Fifteen minutes once a week: look back at what happened, choose what matters next week, and keep a few numbers so you can see the weeks side by side.
 
-> [!module|tpl-weekly-review] Weekly review template
+> [!module|weekly-review] Weekly review
 
-A look back, a plan for next week, some weekly numbers and a short guide, each one a piece you can keep or delete.
+A look back, a plan for next week, the numbers you count and a short guide.
 
-Delete the pieces you do not need. Copy and edit the ones you do.
-
-To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
-
-- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
-- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
-- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
-
-<!-- PIECE 1 of 4: Look back at the week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+<!-- Piece: Look back at the week -->
 
 > [!activity|look-back repeat icon:rotate-ccw] Look back at the week
 
@@ -61,7 +53,7 @@ limit: 4
 empty: No reviews yet.
 ```
 
-<!-- PIECE 2 of 4: Plan the next week. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+<!-- Piece: Plan the next week -->
 
 > [!activity|plan-ahead repeat icon:target] Plan the next week
 
@@ -95,65 +87,58 @@ limit: 6
 empty: No plans yet.
 ```
 
-<!-- PIECE 3 of 4: Weekly numbers. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Change the number questions to whatever you want to count. -->
+<!-- Piece: Weekly numbers -->
 
 > [!activity|weekly-numbers repeat icon:chart-line] Weekly numbers
 
-Three counts for the week. Estimates are fine. The point is to see them change.
+A few things to count each week. Estimates are fine: the point is to see them change.
 
-> [!tab|count] Count
+> [!tab|count] This week
 
-> [!number|focus-hours min:0 max:100] Hours of focused work
+Add the things you want to count, such as hours of focused work, tasks finished or evenings kept free, and put in this week's number for each. Rename one, or remove one you no longer need.
 
-> [!number|tasks-done min:0 max:500] Tasks finished
+```booklet query
+from: counts
+as: table
+fields: what, this-week
+add
+delete
+empty: Nothing to count yet. Add the first thing.
+```
 
-> [!number|free-evenings min:0 max:7] Evenings kept free
+> [!number|this-week each:counts min:0] This week
+
+```booklet data
+{ "fields": { "what": { "label": "What I count", "edit": "text" } },
+  "idFormat": "count-{n}",
+  "rows": [] }
+```
+^counts
 
 > [!tab|trend] Trend
 
-Hours of focused work, week by week.
+Each count, week by week.
 
 ```booklet query
 from: weekly-numbers
 as: line
 label: date
-fields: focus-hours
+fields: this-week
 limit: 12
 empty: Nothing to draw yet. Add a week first.
 ```
 
-Tasks finished, week by week.
-
-```booklet query
-from: weekly-numbers
-as: line
-label: date
-fields: tasks-done
-limit: 12
-empty: Nothing to draw yet. Add a week first.
-```
-
-Evenings kept free, week by week.
-
-```booklet query
-from: weekly-numbers
-as: line
-label: date
-fields: free-evenings
-limit: 12
-empty: Nothing to draw yet. Add a week first.
-```
-
-All three in one table.
+The same numbers in a table.
 
 ```booklet query
 from: weekly-numbers
 as: table
-fields: focus-hours, tasks-done, free-evenings
+fields: this-week
 limit: 8
+empty: No weeks yet.
 ```
 
-<!-- PIECE 4 of 4: How to run a review. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+<!-- Piece: How to run a review -->
 
 > [!activity|how-to icon:book-open] How to run a review in 15 minutes
 
@@ -176,6 +161,6 @@ flowchart TD
 > [!tip] Keep it small
 > A review that takes five minutes and happens every week beats a perfect one you skip.
 
-<!-- END OF PIECES. Keep the module end line below. -->
+<!-- End of pieces -->
 
-> [!module|tpl-weekly-review end] End of Weekly review template
+> [!module|weekly-review end] End of Weekly review

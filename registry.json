@@ -79,11 +79,11 @@
    }
   },
   {
-   "id": "tpl-daily-journal",
-   "version": "0.1",
+   "id": "daily-journal",
+   "version": "0.2",
    "file": "modules/tpl-daily-journal.md",
-   "title": "Daily journal template",
-   "blurb": "A morning plan, an evening entry, a list of small wins and some prompts, each one a piece you can keep or delete.",
+   "title": "Daily journal",
+   "blurb": "A morning plan, an evening entry, small wins and prompts for a blank page.",
    "languages": [
     "en"
    ],
@@ -93,11 +93,11 @@
    }
   },
   {
-   "id": "tpl-habit-tracker",
-   "version": "0.1",
+   "id": "habit-tracker",
+   "version": "0.2",
    "file": "modules/tpl-habit-tracker.md",
-   "title": "Habit tracker template",
-   "blurb": "A daily tick-list, a weekly look back and some habit ideas, each one a piece you can keep or delete.",
+   "title": "Habit tracker",
+   "blurb": "Your habits, marked once a day, a weekly look back and a few ideas to start from.",
    "languages": [
     "en"
    ],
@@ -107,11 +107,11 @@
    }
   },
   {
-   "id": "tpl-project-board",
-   "version": "0.1",
+   "id": "project-board",
+   "version": "0.2",
    "file": "modules/tpl-project-board.md",
-   "title": "Project board template",
-   "blurb": "A board, a task inbox, a project log and a plan at a glance, each one a piece you can keep or delete.",
+   "title": "Project board",
+   "blurb": "What the project is, its tasks by stage, its milestones and a log of what happened.",
    "languages": [
     "en"
    ],
@@ -121,11 +121,11 @@
    }
   },
   {
-   "id": "tpl-report-briefing",
-   "version": "0.1",
+   "id": "report",
+   "version": "0.2",
    "file": "modules/tpl-report-briefing.md",
-   "title": "Report or briefing template",
-   "blurb": "The answer, the numbers, a diagram and a few closing questions on a sample report, each one a piece you can keep or delete.",
+   "title": "Report",
+   "blurb": "[One sentence on what the report covers.]",
    "languages": [
     "en"
    ],
@@ -135,11 +135,11 @@
    }
   },
   {
-   "id": "tpl-study-guide",
-   "version": "0.1",
+   "id": "study-guide",
+   "version": "0.2",
    "file": "modules/tpl-study-guide.md",
-   "title": "Study guide template",
-   "blurb": "A reading, flashcards, a quiz and a study log on a sample topic, each one a piece you can keep or delete.",
+   "title": "Study guide",
+   "blurb": "What you are studying, your own flashcards, a quiz to write and a study log.",
    "languages": [
     "en"
    ],
@@ -149,11 +149,11 @@
    }
   },
   {
-   "id": "tpl-weekly-review",
-   "version": "0.1",
+   "id": "weekly-review",
+   "version": "0.2",
    "file": "modules/tpl-weekly-review.md",
-   "title": "Weekly review template",
-   "blurb": "A look back, a plan for next week, some weekly numbers and a short guide, each one a piece you can keep or delete.",
+   "title": "Weekly review",
+   "blurb": "A look back, a plan for next week, the numbers you count and a short guide.",
    "languages": [
     "en"
    ],

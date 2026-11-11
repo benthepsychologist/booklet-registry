@@ -1,125 +1,98 @@
 ---
-booklet: "0.19"
-id: template/study-guide
-title: Study guide template
-description: A starter study guide with a short reading, flashcards, a self-marking quiz and a study log.
+booklet: "0.20"
+id: my/study-guide
+title: Study guide
+description: What you are studying, flashcards you write yourself, a short quiz to write, and a log of your study sessions.
 lang: en
-version: "0.1"
+version: "0.2"
 license: Apache-2.0
 ---
 
-# Study guide template
+# Study guide
 
-A starter study guide for a student, a teacher or a curious person: a short reading, a few flashcards, a quiz that tells you straight away whether you were right, and a log of your study sessions. The topic (why we have seasons) is only a sample. Swap in your own. Delete the pieces you do not need. Copy and edit the ones you do.
+For anything you are learning: say what you are studying and what you need to know, test yourself with your own flashcards, write a short quiz, and keep a log of your sessions.
 
-> [!module|tpl-study-guide] Study guide template
+> [!module|study-guide] Study guide
 
-A reading, flashcards, a quiz and a study log on a sample topic, each one a piece you can keep or delete.
+What you are studying, your own flashcards, a quiz to write and a study log.
 
-Delete the pieces you do not need. Copy and edit the ones you do.
+<!-- Piece: What I am studying -->
 
-To delete or copy a piece, open this file as text (in Obsidian, press the Show Markdown button; the browser app has no editor). Each piece starts at a comment that names it and runs to the next one.
+> [!activity|studying icon:graduation-cap] What I am studying
 
-- **Copying a piece:** copy it, give every id in the copy a new name, and change the question names in its queries to match (the `from:`, `fields:`, `label:`, `badge:` and `value:` lines), along with the label under any data block.
-- **This first paragraph** is the card text shown in a module list. Edit it when you remove pieces.
-- **Saving your own version:** give it a new module id (the id after the bar on the module line, and again on its end line) and a new `id:` in the front matter. Adding a module whose id already exists replaces the old one.
+Fill this in once, and change it as you go.
 
-<!-- PIECE 1 of 4: The reading. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Replace the sample topic with your own. -->
+> [!text|subject] What are you studying?
+> A subject, a topic or a chapter.
 
-> [!activity|reading icon:book-open] Read: why we have seasons
+> [!date|by-when] When do you need to know it by?
+> An exam, a test or a date of your own. Leave it blank if there is none.
 
-Read this once, slowly. It takes about five minutes.
+> [!lines|must-know] What do you need to know?
+> One line each.
 
-## The short version
+> [!text|notes long] Notes
+> Anything worth writing down as you go.
 
-Seasons happen because the Earth's axis is tilted, not because the Earth moves closer to or further from the Sun.
+<!-- Piece: Flashcards -->
 
-## What the tilt does
+> [!activity|flashcards repeat icon:layers] Flashcards
 
-The Earth spins on an axis that leans about 23 degrees from straight up. As the Earth goes around the Sun over a year, that lean always points the same way in space. So for part of the year the northern half leans toward the Sun, and for part of the year it leans away.
+A card for each thing to remember: a question or a word on the front, the answer on the back. Say the answer out loud first, then open the card to check, and say how it went.
 
-When a hemisphere leans toward the Sun:
-
-- The Sun climbs higher in the sky, so its light arrives more directly.
-- Days are longer, so there are more hours of sunshine.
-- Together, these make it summer there.
-
-At the same time the other hemisphere leans away, so it is winter there.
-
-```mermaid
-flowchart TD
-  A[Tilted axis] --> B[A half leans toward the Sun]
-  B --> C[Higher Sun, longer days]
-  C --> D[Summer there]
+```booklet query
+from: cards
+as: cards
+label: front
+add
+delete
+empty: No cards yet. Add the first one.
 ```
 
-*In Obsidian, you may be asked once to allow diagrams in the vault. If the diagram shows as text, press Allow, then leave this activity and come back.*
+> [!choice|knew each:cards] How did it go?
+- [ ] Knew it
+- [ ] Nearly
+- [ ] Not yet
 
-> [!note] Four days worth knowing
-> The two **solstices** are the longest and shortest days of the year. The two **equinoxes** fall between them, when day and night are close to equal everywhere.
+```booklet data
+{ "fields": { "front": { "label": "Front", "edit": "text" }, "back": { "label": "Back", "edit": "long" } },
+  "idFormat": "card-{n}",
+  "rows": [] }
+```
+^cards
 
-<!-- PIECE 2 of 4: Flashcards. This is one separate piece of the template. It only has words to read. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). Each card is one folded note: the term is the title and the answer is inside. -->
+<!-- Piece: Quiz -->
 
-> [!activity|flashcards icon:layers] Flashcards
+> [!activity|quiz icon:circle-help] Quiz
 
-Say the answer out loud first, then open the card to check.
+Pick an answer and you will see straight away whether it was right. Nothing is scored.
 
-> [!note]- Axis
-> The imaginary line the Earth spins around. It leans about 23 degrees.
-
-> [!note]- Solstice
-> The day of the year with the most daylight (summer) or the least (winter) in a hemisphere.
-
-> [!note]- Equinox
-> A day when day and night are close to equal everywhere. It happens twice a year.
-
-> [!note]- Hemisphere
-> One half of the Earth. The northern and southern halves have opposite seasons.
-
-> [!note]- Season
-> A part of the year with its own typical weather and day length, caused by the tilt of the axis.
-
-<!-- PIECE 3 of 4: Quiz. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). In a pick-one or pick-any question, the correct option is marked with [x]. The reader sees at once whether they were right. Nothing is scored or stored. Anyone who opens the file as text can read the [x] marks, so never use them for anything that must stay hidden. -->
-
-> [!activity|quiz icon:circle-help] Quiz: check yourself
-
-Four questions. Pick an answer and you will see straight away whether it was right. Nothing is scored.
-
-> [!choice|cause] What mainly causes the seasons?
-- [ ] The Earth being closer to the Sun in summer
-  - Not quite. The Earth is actually a little closer to the Sun in early January.
-- [x] The tilt of the Earth's axis
-  - Yes. The tilt changes how directly sunlight arrives and how long the days are.
-- [ ] The Moon's pull
-  - Not quite. The Moon causes tides, not seasons.
+> [!choice|q1] [Your first question]
+- [x] [The right answer]
+  - [Why it is right.]
+- [ ] [A wrong answer]
+  - [Why it is wrong.]
+- [ ] [Another wrong answer]
+  - [Why it is wrong.]
 
 > [!hint]- Hint
-> Think about which half of the Earth is leaning toward the Sun.
+> [A nudge toward the answer.]
+
+> [!multi|q2] [A question with more than one right answer. Pick every one.]
+- [x] [A right answer]
+- [x] [Another right answer]
+- [ ] [A wrong answer]
 
 > [!solution]- Why
-> The axis is tilted about 23 degrees. As the Earth travels around the Sun, each half in turn leans toward it, which gives that half longer days and higher sunlight.
+> [Why those are the right ones.]
 
-> [!multi|true-facts] Which of these are true? Pick every one.
-- [x] When it is summer in the north, it is winter in the south
-- [ ] Summer happens when the whole Earth is nearest the Sun
-- [x] Days are longest near the summer solstice
-- [ ] The equinox is the hottest day of the year
-
-> [!solution]- Why
-> The two halves of the Earth have opposite seasons, and the longest day comes at the summer solstice. Distance from the Sun does not set the seasons, and an equinox is simply a day of near-equal day and night.
-
-> [!choice|equinox] On an equinox, day and night are...
-- [ ] Longest in the north
-- [x] Close to equal everywhere
-- [ ] Longest in the south
-
-> [!text|own-words long] In your own words: why is it summer in the south when it is winter in the north?
-> Two or three sentences. There is no right wording.
+> [!text|q3 long] [A question to answer in your own words]
+> [How long the answer should be.]
 
 > [!solution]- A sample answer
-> The Earth is tilted. When the northern half leans away from the Sun, it gets less direct light and shorter days, while the southern half leans toward the Sun and gets more.
+> [A good answer, to check against.]
 
-<!-- PIECE 4 of 4: Study log. This is one separate piece of the template. You can delete it, or copy it and edit the copy (in the copy, rename every id and the names in its queries, as the top of the module says). -->
+<!-- Piece: Study log -->
 
 > [!activity|study-log repeat icon:clipboard-list] Study log
 
@@ -140,7 +113,7 @@ Add a line each time you study. It helps to see how much you have done.
 4. Well
 
 > [!text|next-time] What to look at next time?
-> Leave blank if nothing.
+> Leave it blank if nothing.
 
 > [!tab|history] Progress
 
@@ -164,6 +137,6 @@ limit: 10
 empty: No sessions yet.
 ```
 
-<!-- END OF PIECES. Keep the module end line below. -->
+<!-- End of pieces -->
 
-> [!module|tpl-study-guide end] End of Study guide template
+> [!module|study-guide end] End of Study guide
