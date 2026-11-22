@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/habit-tracker
 title: Habit tracker
 description: Your own list of habits, marked once a day, with a weekly look back and a few ideas to start from.

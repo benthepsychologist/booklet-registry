@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/project-board
 title: Project board
 description: One project on one page, with what it is, its tasks by stage, its milestones and a log of what happened.
