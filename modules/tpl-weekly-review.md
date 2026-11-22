@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/weekly-review
 title: Weekly review
 description: A look back at the week, a plan for the next one, the numbers you choose to count, and a short guide.

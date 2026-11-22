@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/study-guide
 title: Study guide
 description: What you are studying, flashcards you write yourself, a short quiz for you or a teacher to write, and a log of your study sessions.

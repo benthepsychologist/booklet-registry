@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: btp/the-guide
 title: A short guide to the four quadrants
 lang: en

@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/report
 title: Report
 description: A short report to be read, with the answer first, the figures behind it, how the work was done and a few questions to finish. Words in square brackets are placeholders for your own.

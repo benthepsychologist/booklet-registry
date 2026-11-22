@@ -1,5 +1,5 @@
 ---
-booklet: "0.20"
+booklet: "0.21"
 id: my/daily-journal
 title: Daily journal
 description: A morning plan, an evening entry, a list of small wins and prompts for a blank page.
